@@ -11,6 +11,8 @@ html {
     font-size: 62.5%; /* hace que el formulario sea responsive */
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    z-index: 1;
 }
 
 /* el scroll para la pagina */
@@ -32,7 +34,7 @@ body {
 h1 {
     font-size: 3.8rem; /* hace el formulario responsive */
       /* 1rem = 10px */
-      color: var(--primario);
+      color: var(--blanco);
       font-family: Ysabeau SC;  
 }
 
@@ -47,6 +49,12 @@ h3 {
 
 h1,h2,h3 {
     text-align: center;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 .titulo span {
@@ -100,7 +108,7 @@ h1,h2,h3 {
 .navegacion-1 {
     display: flex;
     flex-direction: column;
-    
+    height: 80px;
 }
 
 @media (min-width: 768px) {
@@ -116,8 +124,11 @@ h1,h2,h3 {
     font-size: 2rem;
     font-weight: 700;
     font-family: Ysabeau SC;
-    padding: 1rem;
+    padding: .5rem;
+    align-items: center;
+    display: flex;
 }
+
 /* sombre en los botones de la barra de mas arriba */
 .navegacion-1 a:hover {
     background-color: var(--gris);
@@ -138,8 +149,8 @@ h1,h2,h3 {
     /* background-color: rgba(0, 0, 0, .5); */
     background-color: rgb(0 0 0 / 50%);
     width: 100%;
-    height: 100%;
-
+    height: 370px;
+    top: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,6 +238,7 @@ h1,h2,h3 {
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
+    font-family: monospace;
 }
 
 .campo textarea {

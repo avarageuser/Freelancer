@@ -57,10 +57,6 @@ header {
     width: 100%;
 }
 
-.titulo span {
-    font-size: 2rem;
-}
-
 /* uso el contenedor en parte del html y les aplico estas caracteristicas */
 .contenedor {
     max-width: 120rem;

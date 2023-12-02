@@ -21,9 +21,22 @@
         <a href="#inicio">Inicio</a>
         <a href="https://www.linkedin.com/in/lucas-gonzalez-a222ba293/">Sobre Mi</a>
         <a href="#">clientes</a>
-        <a href="https://www.linkedin.com/in/esteban-bentancor-2170b2277">Comunidad</a>
+        <div class="dropdown">
+            <button onclick="botondrop()" class="dropbtn">Comunidad</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="https://www.linkedin.com/in/esteban-bentancor-2170b2277">Esteban Bentancor</a>
+                <a href="https://www.linkedin.com/in/camila-pr%C3%ADncipe-169503221/">Camila Principe</a>
+                <a href="https://uy.linkedin.com/in/cristian-fern%C3%A1ndez-595329283">Cristian Fernandez</a>
+                <a href="https://www.linkedin.com/in/julia-melian/">Maria Julia Melian</a>
+                <a href="https://www.linkedin.com/in/yesica-molina-97189014a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Yesica Molina</a>
+                <a href="https://www.linkedin.com/in/cristianvaliente?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Cristian Valiente</a>
+            </div>
     </nav>
     </div>
+
+    
+    
+
     </header>
 
     <section class="freelancer">
@@ -75,7 +88,7 @@
           </svg>
         </p>
         </div>
-        <p>Cuento con HTML, CSS, JS, PHP y MySQL.</p>
+        <p>Cuento con HTML, CSS, JS prox (PHP y MySQL).</p>
     </section>
 
     <section class="servicio">
@@ -131,22 +144,7 @@
 </section>
 </main>
 
-<script>
-    function agregarPrefijo() {
-        // Obtener el valor actual del campo de teléfono
-        var telefono = document.getElementById('telefono').value;
-
-        // Verificar si el teléfono ya tiene un prefijo internacional
-        if (!telefono.startsWith('+')) {
-            // Agregar el prefijo internacional (puedes cambiar '+1' por el prefijo que necesites)
-            telefono = '+598' + telefono;
-            
-            // Actualizar el valor del campo de teléfono
-            document.getElementById('telefono').value = telefono;
-        }
-    }
-</script>
-
+<script src="script.js"></script>
 
 <footer class="footer">
     <p>Todos los derechos resevados. Lucas Gonzalez</p>

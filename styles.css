@@ -277,3 +277,53 @@ header {
     text-align: center;
     font-family: Ysabeau SC;
 }
+
+/* Estilo base para el botón y el dropdown */
+.dropdown {
+    position: relative;
+    display: flex;
+    font-family: Ysabeau SC;
+    align-items: center;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+/* Estilo del botón */
+.dropbtn {
+    padding: 10px;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+/* Estilo del contenido del dropdown (inicialmente oculto) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0, 2);
+    z-index: 1;
+}
+
+/* Estilo de los enlaces dentro del dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cambia el color del enlace cuando se pasa el ratón por encima */
+.dropdown-content a:hover {
+    background-color: var(--gris);
+}
+
+/* Muestra el dropdown cuando se pasa el ratón por encima del botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -250,6 +250,7 @@ header {
 /* utilizades generales */ 
 .w-sm-100 {
     width: 100%;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
